@@ -23,7 +23,7 @@ impl Scanner {
 
 fn main() {
     let mut scan = Scanner::default();
-    let n: i32 = scan.next();
     let out = &mut BufWriter::new(stdout());
+    let n: i32 = scan.next();
     writeln!(out, "{}", n).ok();
 }
